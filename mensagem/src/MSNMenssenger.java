@@ -1,5 +1,11 @@
 public class MSNMenssenger extends ServicoMensagemInstantanea{
-    //Jeito herdado  
+    //Jeito herdado e abstraído
+    public void enviarMensagem(){
+        System.out.println("Enviando mensagem pelo MSN");
+    } 
+    public void receberMensagem(){
+        System.out.println("Recebendo mensagem pelo MSN");
+    }
 }
 
 /*Jeito arcaico

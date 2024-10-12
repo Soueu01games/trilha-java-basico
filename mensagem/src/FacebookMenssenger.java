@@ -1,5 +1,11 @@
 public class FacebookMenssenger extends ServicoMensagemInstantanea{
-    //Jeito herdado  
+    //Jeito herdado  e abstraído
+    public void enviarMensagem(){
+        System.out.println("Enviando mensagem pelo Facebook");
+    } 
+    public void receberMensagem(){
+        System.out.println("Recebendo mensagem pelo Facebook");
+    }
 }
 
 /*Jeito arcaico

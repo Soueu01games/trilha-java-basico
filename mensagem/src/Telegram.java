@@ -1,5 +1,11 @@
 public class Telegram extends ServicoMensagemInstantanea{
-    //Jeito herdado  
+    //Jeito herdado  e abstraído
+    public void enviarMensagem(){
+        System.out.println("Enviando mensagem pelo Telegram");
+    } 
+    public void receberMensagem(){
+        System.out.println("Recebendo mensagem pelo Telegram");
+    }
 }
 
 /*Jeito arcaico
