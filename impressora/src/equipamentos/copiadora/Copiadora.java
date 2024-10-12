@@ -1,3 +1,5 @@
-public class Copiadora {
-    
+package equipamentos.copiadora;
+public interface Copiadora {
+    public void copiar();
+
 }
