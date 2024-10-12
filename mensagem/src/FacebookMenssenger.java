@@ -1,19 +1,17 @@
-public class MSNMenssenger extends ServicoMensagemInstantanea{
+public class FacebookMenssenger extends ServicoMensagemInstantanea{
     //Jeito herdado  
 }
 
 /*Jeito arcaico
-public class MSNMenssenger {
+public class FacebookMenssenger {
     public void enviarMensagem(){
-        System.out.println();
         validarConectadoInternet();
-        System.out.println("Enviando mensagem pelo MSN");
+        System.out.println("Enviando mensagem pelo Facebook");
         salvarHistoricoMensagem();
     }
     public void receberMensagem(){
-        System.out.println("Recebendo mensagem pelo MSN");
+        System.out.println("Recebendo mensagem pelo Facebook");
         System.out.println();
-
     }
     private void validarConectadoInternet(){
         System.out.println("Validando se está conectado a internet");
@@ -21,5 +19,6 @@ public class MSNMenssenger {
     private void salvarHistoricoMensagem(){
         System.out.println("Salvando o histórico da mensagen");
     }
+    
 }
 */

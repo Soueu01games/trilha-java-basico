@@ -1,17 +1,16 @@
-public class MSNMenssenger extends ServicoMensagemInstantanea{
+public class Telegram extends ServicoMensagemInstantanea{
     //Jeito herdado  
 }
 
 /*Jeito arcaico
-public class MSNMenssenger {
+public class Telegram {
     public void enviarMensagem(){
-        System.out.println();
         validarConectadoInternet();
-        System.out.println("Enviando mensagem pelo MSN");
+        System.out.println("Enviando mensagem pelo Telegram");
         salvarHistoricoMensagem();
     }
     public void receberMensagem(){
-        System.out.println("Recebendo mensagem pelo MSN");
+        System.out.println("Recebendo mensagem pelo Telegram");
         System.out.println();
 
     }
