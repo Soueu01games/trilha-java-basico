@@ -1,5 +1,27 @@
+import apps.FacebookMenssenger;
+import apps.MSNMenssenger;
+import apps.ServicoMensagemInstantanea;
+import apps.Telegram;
+
 public class ComputadorPedrinho {
-//O mesmo código é feito 3 vezes em 3 arquivo, isso não é prático
+    public static void main(String[] args){
+    ServicoMensagemInstantanea smi = null; 
+    //Não sabe o app, mas tem que enviar e receber
+
+    String appEscolhido="fcb";
+
+    if(appEscolhido.equals("msn"))
+        smi = new MSNMenssenger();
+    else if(appEscolhido.equals("fcb")) 
+        smi = new FacebookMenssenger();
+    else if(appEscolhido.equals("tlg"))
+        smi = new  Telegram();  
+
+    smi.enviarMensagem();
+    smi.receberMensagem();
+    }
+
+    /*Código antes do polimorfismo
     public static void main(String[]args){
         System.out.println("\nMSN:");
         MSNMenssenger msn = new MSNMenssenger();
@@ -17,4 +39,5 @@ public class ComputadorPedrinho {
         tlg.receberMensagem();
         System.out.println();
     }
+        */
 }

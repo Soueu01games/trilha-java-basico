@@ -1,23 +1,26 @@
-public class FacebookMenssenger extends ServicoMensagemInstantanea{
+package apps;
+public class Telegram extends ServicoMensagemInstantanea{
     //Jeito herdado  e abstraído
     public void enviarMensagem(){
-        System.out.println("Enviando mensagem pelo Facebook");
+        validarConectadoInternet();
+        System.out.println("Enviando mensagem pelo Telegram");
     } 
     public void receberMensagem(){
-        System.out.println("Recebendo mensagem pelo Facebook");
+        System.out.println("Recebendo mensagem pelo Telegram\n");
     }
 }
 
 /*Jeito arcaico
-public class FacebookMenssenger {
+public class Telegram {
     public void enviarMensagem(){
         validarConectadoInternet();
-        System.out.println("Enviando mensagem pelo Facebook");
+        System.out.println("Enviando mensagem pelo Telegram");
         salvarHistoricoMensagem();
     }
     public void receberMensagem(){
-        System.out.println("Recebendo mensagem pelo Facebook");
+        System.out.println("Recebendo mensagem pelo Telegram");
         System.out.println();
+
     }
     private void validarConectadoInternet(){
         System.out.println("Validando se está conectado a internet");
@@ -25,6 +28,5 @@ public class FacebookMenssenger {
     private void salvarHistoricoMensagem(){
         System.out.println("Salvando o histórico da mensagen");
     }
-    
 }
 */

@@ -1,22 +1,25 @@
-public class Telegram extends ServicoMensagemInstantanea{
-    //Jeito herdado  e abstraído
+package apps;
+public class MSNMenssenger extends ServicoMensagemInstantanea{
+    //Jeito herdado e abstraído
     public void enviarMensagem(){
-        System.out.println("Enviando mensagem pelo Telegram");
+        validarConectadoInternet();
+        System.out.println("Enviando mensagem pelo MSN");
     } 
     public void receberMensagem(){
-        System.out.println("Recebendo mensagem pelo Telegram");
+        System.out.println("Recebendo mensagem pelo MSN\n");
     }
 }
 
 /*Jeito arcaico
-public class Telegram {
+public class MSNMenssenger {
     public void enviarMensagem(){
+        System.out.println();
         validarConectadoInternet();
-        System.out.println("Enviando mensagem pelo Telegram");
+        System.out.println("Enviando mensagem pelo MSN");
         salvarHistoricoMensagem();
     }
     public void receberMensagem(){
-        System.out.println("Recebendo mensagem pelo Telegram");
+        System.out.println("Recebendo mensagem pelo MSN");
         System.out.println();
 
     }
