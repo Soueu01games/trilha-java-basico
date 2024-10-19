@@ -1,7 +1,11 @@
 public class main {
     public static void main(String [] args){
-        ContaCorrente cc = new ContaCorrente();
-        ContaPoupanca poupanca = new ContaPoupanca();
+        Cliente emanuela =new Cliente();
+        emanuela.setNome("Emanuela");
+
+
+        Conta cc = new ContaCorrente(emanuela);
+        Conta poupanca = new ContaPoupanca(emanuela);
         
         cc.depositar(100);
         cc.transferir(100, poupanca);
